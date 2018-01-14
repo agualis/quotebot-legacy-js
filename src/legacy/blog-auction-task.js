@@ -27,6 +27,6 @@ export class BlogAuctionTask {
     proposal = proposal % 2 === 0 ? 3.14 * proposal : 3.15
       * timeFactor
       * (new Date().getTime() - new Date(2000, 1, 1).getTime());
-    QuotePublisher.INSTANCE.publish(proposal);
+    QuotePublisher.getInstance().publish(proposal);
   }
 }

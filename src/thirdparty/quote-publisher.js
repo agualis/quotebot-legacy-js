@@ -1,8 +1,11 @@
 import alert from 'alert-node'
 
+var INSTANCE = null;
 export class QuotePublisher {
-  constructor() {
-    this.INSTANCE = new QuotePublisher();
+
+  static getInstance() {
+    if (!INSTANCE) INSTANCE = new QuotePublisher();
+    return INSTANCE;
   }
 
   publish(todayPrice) {
