@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "unit": "mocha --compilers js:babel-core/register -r babel-polyfill ./setupTests.js './src/**/*.spec.js*'"
+  },
+  "devDependencies": {
+    "alert-node": "^0.2.1",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  }
+}
